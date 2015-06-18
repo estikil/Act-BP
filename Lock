@@ -1,0 +1,940 @@
+document.write('\
+<link rel="stylesheet" href="https://www.apple.com/support/assets/css/global/globalheader1-1.css" type="text/css" />\
+<link rel="stylesheet" href="https://www.apple.com/support/css/ssl/base_new.css" type="text/css" charset="utf-8">\
+<link rel="stylesheet" href="https://www.apple.com/support/css/ssl/support.css" type="text/css" charset="utf-8">  \
+<link rel="stylesheet" href="https://ssl.apple.com/support/css/suggest2.css" type="text/css" charset="utf-8">\
+\
+<script src="https://www.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>\
+<script src="https://www.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>\
+<script src="https://www.apple.com/global/scripts/search_decorator.js"  type="text/javascript" charset="utf-8"></script>\
+<script src="https://www.apple.com/support/scripts/module_decorator.js" type="text/javascript" charset="utf-8"></script>\
+<script src="https://km.support.apple.com.edgekey.net/kb/resources/js/persist-min.js" type="text/javascript" charset="utf-8"></script>\
+<script src="https://km.support.apple.com.edgekey.net/kb/resources/js/ACFeedStatistics.js" type="text/javascript" charset="utf-8"></script>\
+\
+<!-- A couple of IE8 specific styles -->\
+<!--[if IE 8]>\
+	<script>\
+		document.createElement("nav");\
+	</script>\
+	<style>\
+		.gh-oldie#globalheader .gh-nav-list .gh-tab{\
+			display: inline-block;\
+		}\
+		nav {\
+			display: block;\
+		}\
+	</style>\
+<![endif]-->\
+\
+<!-- A couple of Mozilla Firefox and IE specific styles-->\
+<style>\
+	input.gh-search-input {\
+		background: none !important;\
+	}\
+	button.gh-search-submit {\
+		filter: none !important;\
+	}\
+	.gh-svg-wrapper, .gh-svg-wrapper:active, .gh-svg-wrapper:hover {\
+		background: none;\
+		filter: none;\
+	}\
+</style>\
+<nav id="globalheader" class="globalheader gh-selected-tab-support" role="navigation" aria-label="Global Navigation" data-hires="false" data-analytics-region="global nav" lang="en-US">\
+	<div id="gh-content" class="gh-content">\
+		<ul class="gh-menu">\
+			<li id="gh-menu-icon-toggle" class="gh-menu-icon gh-menu-icon-toggle"><button id="gh-svg-icons" class="gh-svg-wrapper"><span class="gh-text-replace">Menu</span></button></li>\
+			<li id="gh-menu-icon-home" class="gh-menu-icon gh-menu-icon-home"><a href="https://www.apple.com/"><span class="gh-text-replace">Apple</span></a></li>\
+		</ul><!--/gh-menu-->\
+		<div class="gh-nav">\
+			<div class="gh-nav-view">\
+				<ul class="gh-nav-list">\
+					<li class="gh-tab gh-tab-apple"><a class="gh-tab-link" href="https://www.apple.com/"><span class="gh-tab-inner"><span class="gh-text-replace">Apple</span></span></a></li>\
+					<li class="gh-tab gh-tab-store"><a class="gh-tab-link" href="http://store.apple.com/us"><span class="gh-tab-inner"><span class="gh-text-replace">Store</span></span></a></li>\
+					<li class="gh-tab gh-tab-mac"><a class="gh-tab-link" href="https://www.apple.com/mac/"><span class="gh-tab-inner"><span class="gh-text-replace">Mac</span></span></a></li>\
+					<li class="gh-tab gh-tab-ipad"><a class="gh-tab-link" href="https://www.apple.com/ipad/"><span class="gh-tab-inner"><span class="gh-text-replace">iPad</span></span></a></li>\
+					<li class="gh-tab gh-tab-iphone"><a class="gh-tab-link" href="https://www.apple.com/iphone/"><span class="gh-tab-inner"><span class="gh-text-replace">iPhone</span></span></a></li>\
+					<li class="gh-tab gh-tab-watch"><a class="gh-tab-link" href="https://www.apple.com/watch/"><span class="gh-tab-inner"><span class="gh-text-replace">Watch</span></span></a></li>\
+					<li class="gh-tab gh-tab-music"><a class="gh-tab-link" href="https://www.apple.com/music/"><span class="gh-tab-inner"><span class="gh-text-replace">Music</span></span></a></li>\
+					<li class="gh-tab gh-tab-support"><a class="gh-tab-link" href="https://www.apple.com/support/"><span class="gh-tab-inner"><span class="gh-text-replace">Support</span></span></a></li>\
+					<li id="gh-tab-search" class="gh-tab gh-tab-search">\
+						<div id="gh-search" class="gh-search" role="search">\
+							<form action="https://support.apple.com/kb/index" method="post" class="gh-search-form" id="gh-search-form">\
+								<div class="gh-search-input-wrapper">\
+									<input type="hidden" name="page" value="search" />\
+									<input type="hidden" name="src" value="support_site.globalheader.search" />\
+									<input type="hidden" name="locale" value="en_US" />\
+									<label for="gh-search-input" class="gh-text-replace">Search Support</label>\
+									<input type="text" name="q" id="gh-search-input" class="gh-search-input" placeholder="Search Support" />\
+								</div>\
+								<button disabled="disabled" type="submit" id="gh-search-submit" class="gh-search-submit gh-search-magnify"><span class="gh-text-replace">Search Support</span></button>\
+								<button disabled="disabled" type="reset" id="gh-search-reset" class="gh-search-reset"><span class="gh-text-replace">Reset</span></button>\
+							</form>\
+						</div>\
+						<a class="gh-search-magnify" href="https://support.apple.com/kb/index?page=search&locale=en_US"><span class="gh-text-replace">Search Support</span></a>\
+					</li>\
+				</ul>\
+			</div>\
+		</div><!--/gh-nav-->\
+	</div>\
+</nav><!--/globalheader-->\
+\
+<script src="https://www.apple.com/support/assets/scripts/global/globalheader.js" type="text/javascript" charset="utf-8"></script>\
+<script src="https://ssl.apple.com/support/assets/scripts/global/survey/accsoffer.js" type="text/javascript" charset="utf-8"></script>\
+');
+
+<!DOCTYPE html>
+<html class="  ">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+  <title>Search · style sheets.css</title>
+ 
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="Skc5mCgUcCWmMrBR2mgRY1SNiHS8aPMdNRle3cF0/1QdQnfS0yNqNj5FuotBpHN2lEo6g8pc8Kic87gKrUymmg==" name="csrf-token" />
+  <meta name="viewport" content="width=960">
+ 
+ 
+    <link type="text/plain" rel="author" href="https://github.com/humans.txt" />
+    <meta content="gist" name="octolytics-app-id" /><meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="7C06B536:3F00:1B2B355:5582DDD0" name="octolytics-dimension-request_id" /><meta content="12773557" name="octolytics-actor-id" /><meta content="estikil" name="octolytics-actor-login" /><meta content="4758fddf95dd97a0a77e1990acd906770b2d8f9cd646f3c12e109fc4715d493a" name="octolytics-actor-hash" />
+  <link rel="assets" href="https://gist-assets.github.com/">
+  <link rel="zeroclipboard-assets" href="https://gist-assets.github.com/assets/zeroclipboard/dist/ZeroClipboard-87e50016889328a9fd3deebcf4200cf5.swf">
+  <link rel="editor-assets" href="https://gist-assets.github.com/assets/editor-506f61feee257c6e06c62d0e1e177ad6.js">
+  <link rel="mount-point" href="/">
+ 
+ 
+  <link href="https://gist-assets.github.com/assets/application-f283c3acf07a52ecb5bbd4e48e027fb4.css" media="screen, print" rel="stylesheet" />
+  <script src="https://gist-assets.github.com/assets/application-39f3df8dbac91ec3bdeae3f8187b88e6.js"></script>
+ 
+  
+</head>
+ 
+<body class="logged_in "
+  data-plan="">
+ 
+  <div id="wrapper">
+    
+ 
+    <div id="header" class="header header-logged-in">
+      <div class="container clearfix">
+        <a class="header-logo-wordmark" href="https://gist.github.com/">
+          <span class="octicon octicon-logo-github"></span>
+          <span class="octicon-logo octicon-logo-gist"></span>
+        </a>
+ 
+        <div class="divider-vertical"></div>
+        <div class="topsearch">
+  <form id="top_search_form" action="/search" data-pjax-remote=push accept-charset="UTF-8">
+    <div class="search">
+      <input type="text" class="search js-search js-navigation-enable js-quick-search" name="q" placeholder="Search&#x2026;" data-hotkey="/" autocomplete=off autocorrect=off value="style sheets.css" autofocus>
+ 
+      <div class="search-results js-search-results js-navigation-container"></div>
+    </div>
+    <div class="divider-vertical"></div>
+  </form>
+  <ul class="top-nav">
+    <li class="explore"><a href="/discover">All Gists</a></li>
+ 
+  </ul>
+</div>
+ 
+        <ul id="user-links">
+  <li>
+  <a href="/estikil" class="name">
+    <img src="https://avatars0.githubusercontent.com/u/12773557?s=140" width="20" height="20"> estikil
+  </a>
+  </li>
+  <li>
+  <a href="/" id="new_gist" class="tooltipped tooltipped-s" aria-label="New Gist">
+    <span class="octicon octicon-gist-new"></span>
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com" class="tooltipped tooltipped-s" aria-label="Go to GitHub" data-skip-pjax>
+    <span class="octicon octicon-octoface"></span>
+  </a>
+  </li>
+  <li>
+  <form action="/logout" method="post">
+    <input name="authenticity_token" type="hidden" value="7tmr5hQ1aeb4OeARK9wPZb4zv6oSNwjoxRz9bbuSDzC53OWs7wJz9WBO6suwEG1wfvQNXWQDC11s9hu616pW/g==" />
+    <button class="logout-button tooltipped tooltipped-s" id="logout" type="submit" aria-label="Sign out">
+      <span class="octicon octicon-log-out"></span>
+    </button>
+  </form>
+  </li>
+</ul>
+ 
+      </div>
+    </div>
+ 
+    <div class="site-content" id="js-pjax-container" data-pjax-container>
+      <div id="js-flash-container" class="site-container js-site-container" data-url="/search?q=style+sheets.css">
+  
+  
+<div class="pagehead separation search-head">
+  <div class="container">
+    <h1>We've found 2,502 results for <strong>style sheets.css</strong></h1>
+  </div>
+</div>
+ 
+<div class="container">
+ 
+  <div class="gist js-gist-container gist-with-sidebar with-full-navigation">
+      <div class="gist-sidebar clearfix">
+    <h3>Languages</h3>
+    <ul class="filter-list small js-selectable-list language-search-filter" data-pjax>
+        <li>
+            <span class="bar" style="width: 31%;"></span>
+ 
+            <a class="filter-item" href="/search?l=markdown&amp;q=style+sheets.css">
+              <span class="count">968</span>
+              Markdown
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 25%;"></span>
+ 
+            <a class="filter-item" href="/search?l=javascript&amp;q=style+sheets.css">
+              <span class="count">778</span>
+              JavaScript
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 14%;"></span>
+ 
+            <a class="filter-item" href="/search?l=html&amp;q=style+sheets.css">
+              <span class="count">452</span>
+              HTML
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 9%;"></span>
+ 
+            <a class="filter-item" href="/search?l=css&amp;q=style+sheets.css">
+              <span class="count">295</span>
+              CSS
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4%;"></span>
+ 
+            <a class="filter-item" href="/search?l=json&amp;q=style+sheets.css">
+              <span class="count">133</span>
+              JSON
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4px;"></span>
+ 
+            <a class="filter-item" href="/search?l=xml&amp;q=style+sheets.css">
+              <span class="count">67</span>
+              XML
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4px;"></span>
+ 
+            <a class="filter-item" href="/search?l=php&amp;q=style+sheets.css">
+              <span class="count">59</span>
+              PHP
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4px;"></span>
+ 
+            <a class="filter-item" href="/search?l=less&amp;q=style+sheets.css">
+              <span class="count">49</span>
+              Less
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4px;"></span>
+ 
+            <a class="filter-item" href="/search?l=coffeescript&amp;q=style+sheets.css">
+              <span class="count">34</span>
+              CoffeeScript
+</a>        </li>
+        <li>
+            <span class="bar" style="width: 4px;"></span>
+ 
+            <a class="filter-item" href="/search?l=python&amp;q=style+sheets.css">
+              <span class="count">27</span>
+              Python
+</a>        </li>
+    </ul>
+  </div>
+ 
+ 
+    <div class="gist-content">
+      <div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars0.githubusercontent.com/u/37928?s=140" width="140" height="140">
+      <a href="/aaronmcadam">aaronmcadam</a>
+    / <a href="/aaronmcadam/2731a03a0d06026af0b8"><strong class="css-truncate-target">css_rule_count.js</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2014-08-13T11:31:41Z" is="relative-time">August 13, 2014</time></span>
+  </div>
+    <span class="description">
+    <div>Get the number of rules in a CSS file</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/aaronmcadam/2731a03a0d06026af0b8" class="link-overlay">
+            <span class="link">View <strong>css_rule_count.js</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-css_rule_count-js-L1" rel="file-css_rule_count-js-L1">1</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-css_rule_count-js-LC1"><span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].cssRules.<span class="pl-sc">length</span></div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars3.githubusercontent.com/u/2296711?s=140" width="140" height="140">
+      <a href="/darryl-snow">darryl-snow</a>
+    / <a href="/darryl-snow/3813477"><strong class="css-truncate-target">gist:3813477</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2012-10-01T18:19:50Z" is="relative-time">October 01, 2012</time></span>
+  </div>
+    <span class="description">
+    <div>HTML: Acronym Tag</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/darryl-snow/3813477" class="link-overlay">
+            <span class="link">View <strong>gist:3813477</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-html-L1" rel="file-gistfile1-html-L1">1</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-html-LC1">I love &lt;<span class="pl-ent">acronym</span> <span class="pl-e">title</span>=<span class="pl-s1"><span class="pl-pds">&quot;</span>Cascading Style Sheets<span class="pl-pds">&quot;</span></span>&gt;CSS&lt;/<span class="pl-ent">acronym</span>&gt;.</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars2.githubusercontent.com/u/140584?s=140" width="140" height="140">
+      <a href="/s-aska">s-aska</a>
+    / <a href="/s-aska/7544824"><strong class="css-truncate-target">gist:7544824</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2013-11-19T12:45:54Z" is="relative-time">November 19, 2013</time></span>
+  </div>
+    <span class="description">
+    <div></div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/s-aska/7544824" class="link-overlay">
+            <span class="link">View <strong>gist:7544824</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-txt-L1" rel="file-gistfile1-txt-L1">1</span>
+                  <span class="line-number" id="file-gistfile1-txt-L2" rel="file-gistfile1-txt-L2">2</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-txt-LC1">- document.styleSheets[0].insertRule(rule); // NG</div><div class="line" id="file-gistfile1-txt-LC2">+ document.styleSheets[0].insertRule(rule, document.styleSheets[0].cssRules.length); // OK</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars1.githubusercontent.com/u/36308?s=140" width="140" height="140">
+      <a href="/rafacv">rafacv</a>
+    / <a href="/rafacv/44212"><strong class="css-truncate-target">getStyleClass</strong></a>
+  </span>
+  <div class="metadata">
+    <span class="datetime">Last active <time datetime="2009-10-21T23:02:54Z" is="relative-time">October 21, 2009</time></span>
+  </div>
+    <span class="description">
+    <div>Returns the class style object passed as parameter</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/rafacv/44212" class="link-overlay">
+            <span class="link">View <strong>getStyleClass</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-getstyleclass-L1" rel="file-getstyleclass-L1">1</span>
+                  <span class="line-number" id="file-getstyleclass-L2" rel="file-getstyleclass-L2">2</span>
+                  <span class="line-number" id="file-getstyleclass-L3" rel="file-getstyleclass-L3">3</span>
+                  <span class="line-number" id="file-getstyleclass-L4" rel="file-getstyleclass-L4">4</span>
+                  <span class="line-number" id="file-getstyleclass-L5" rel="file-getstyleclass-L5">5</span>
+                  <span class="line-number" id="file-getstyleclass-L6" rel="file-getstyleclass-L6">6</span>
+                  <span class="line-number" id="file-getstyleclass-L7" rel="file-getstyleclass-L7">7</span>
+                  <span class="line-number" id="file-getstyleclass-L8" rel="file-getstyleclass-L8">8</span>
+                  <span class="line-number" id="file-getstyleclass-L9" rel="file-getstyleclass-L9">9</span>
+                  <span class="line-number" id="file-getstyleclass-L10" rel="file-getstyleclass-L10">10</span>
+                  <span class="line-number" id="file-getstyleclass-L11" rel="file-getstyleclass-L11">11</span>
+                  <span class="line-number" id="file-getstyleclass-L12" rel="file-getstyleclass-L12">12</span>
+                  <span class="line-number" id="file-getstyleclass-L13" rel="file-getstyleclass-L13">13</span>
+                  <span class="line-number" id="file-getstyleclass-L14" rel="file-getstyleclass-L14">14</span>
+                  <span class="line-number" id="file-getstyleclass-L15" rel="file-getstyleclass-L15">15</span>
+                  <span class="line-number" id="file-getstyleclass-L16" rel="file-getstyleclass-L16">16</span>
+                  <span class="line-number" id="file-getstyleclass-L17" rel="file-getstyleclass-L17">17</span>
+                  <span class="line-number" id="file-getstyleclass-L18" rel="file-getstyleclass-L18">18</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-getstyleclass-LC1">function getStyleClass(className) {
+</div><div class="line" id="file-getstyleclass-LC2">    for (var s = 0; s &lt; document.styleSheets.length; s++) {
+</div><div class="line" id="file-getstyleclass-LC3">        if(document.styleSheets[s].rules) {
+</div><div class="line" id="file-getstyleclass-LC4">            for (var r = 0; r &lt; document.styleSheets[s].rules.length; r++) {
+</div><div class="line" id="file-getstyleclass-LC5">                if (document.styleSheets[s].rules[r].selectorText == &#39;.&#39; + className) {
+</div><div class="line" id="file-getstyleclass-LC6">                    return document.styleSheets[s].rules[r];
+</div><div class="line" id="file-getstyleclass-LC7">                }
+</div><div class="line" id="file-getstyleclass-LC8">            }
+</div><div class="line" id="file-getstyleclass-LC9">        } else if(document.styleSheets[s].cssRules) {
+</div><div class="line" id="file-getstyleclass-LC10">            for (var r = 0; r &lt; document.styleSheets[s].cssRules.length; r++) {
+</div><div class="line" id="file-getstyleclass-LC11">                if (document.styleSheets[s].cssRules[r].selectorText == &#39;.&#39; + className)
+</div><div class="line" id="file-getstyleclass-LC12">                    return document.styleSheets[s].cssRules[r];
+</div><div class="line" id="file-getstyleclass-LC13">            }
+</div><div class="line" id="file-getstyleclass-LC14">        }
+</div><div class="line" id="file-getstyleclass-LC15">    }
+</div><div class="line" id="file-getstyleclass-LC16">
+</div><div class="line" id="file-getstyleclass-LC17">    return null;
+</div><div class="line" id="file-getstyleclass-LC18">}</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars1.githubusercontent.com/u/1218420?s=140" width="140" height="140">
+      <a href="/bassettsj">bassettsj</a>
+    / <a href="/bassettsj/5845838"><strong class="css-truncate-target">comic-sans.js</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2013-06-23T17:38:00Z" is="relative-time">June 23, 2013</time></span>
+  </div>
+    <span class="description">
+    <div>Comic Sans Bookmarklet.</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/bassettsj/5845838" class="link-overlay">
+            <span class="link">View <strong>comic-sans.js</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-comic-sans-js-L1" rel="file-comic-sans-js-L1">1</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-comic-sans-js-LC1">javascript<span class="pl-k">:</span>(<span class="pl-st">function</span>(){<span class="pl-s">var</span> x<span class="pl-k">=</span><span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>.<span class="pl-sc">length</span><span class="pl-k">-</span><span class="pl-c1">1</span>];x.insertRule(<span class="pl-s1"><span class="pl-pds">&#39;</span>* { font-family: &quot;Comic Sans MS&quot; !important; }<span class="pl-pds">&#39;</span></span>,x.cssRules.<span class="pl-sc">length</span>);})()</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars3.githubusercontent.com/u/803674?s=140" width="140" height="140">
+      <a href="/monolithed">monolithed</a>
+    / <a href="/monolithed/7640090"><strong class="css-truncate-target">urls</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2013-11-25T11:42:19Z" is="relative-time">November 25, 2013</time></span>
+  </div>
+    <span class="description">
+    <div></div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/monolithed/7640090" class="link-overlay">
+            <span class="link">View <strong>urls</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-urls-L1" rel="file-urls-L1">1</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-urls-LC1">~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars0.githubusercontent.com/u/12353?s=140" width="140" height="140">
+      <a href="/NReinhart">NReinhart</a>
+    / <a href="/NReinhart/876903"><strong class="css-truncate-target">gist:876903</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2011-03-18T21:45:06Z" is="relative-time">March 18, 2011</time></span>
+  </div>
+    <span class="description">
+    <div>Hide and show elements based on running javascript</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/NReinhart/876903" class="link-overlay">
+            <span class="link">View <strong>gist:876903</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-js-L1" rel="file-gistfile1-js-L1">1</span>
+                  <span class="line-number" id="file-gistfile1-js-L2" rel="file-gistfile1-js-L2">2</span>
+                  <span class="line-number" id="file-gistfile1-js-L3" rel="file-gistfile1-js-L3">3</span>
+                  <span class="line-number" id="file-gistfile1-js-L4" rel="file-gistfile1-js-L4">4</span>
+                  <span class="line-number" id="file-gistfile1-js-L5" rel="file-gistfile1-js-L5">5</span>
+                  <span class="line-number" id="file-gistfile1-js-L6" rel="file-gistfile1-js-L6">6</span>
+                  <span class="line-number" id="file-gistfile1-js-L7" rel="file-gistfile1-js-L7">7</span>
+                  <span class="line-number" id="file-gistfile1-js-L8" rel="file-gistfile1-js-L8">8</span>
+                  <span class="line-number" id="file-gistfile1-js-L9" rel="file-gistfile1-js-L9">9</span>
+                  <span class="line-number" id="file-gistfile1-js-L10" rel="file-gistfile1-js-L10">10</span>
+                  <span class="line-number" id="file-gistfile1-js-L11" rel="file-gistfile1-js-L11">11</span>
+                  <span class="line-number" id="file-gistfile1-js-L12" rel="file-gistfile1-js-L12">12</span>
+                  <span class="line-number" id="file-gistfile1-js-L13" rel="file-gistfile1-js-L13">13</span>
+                  <span class="line-number" id="file-gistfile1-js-L14" rel="file-gistfile1-js-L14">14</span>
+                  <span class="line-number" id="file-gistfile1-js-L15" rel="file-gistfile1-js-L15">15</span>
+                  <span class="line-number" id="file-gistfile1-js-L16" rel="file-gistfile1-js-L16">16</span>
+                  <span class="line-number" id="file-gistfile1-js-L17" rel="file-gistfile1-js-L17">17</span>
+                  <span class="line-number" id="file-gistfile1-js-L18" rel="file-gistfile1-js-L18">18</span>
+                  <span class="line-number" id="file-gistfile1-js-L19" rel="file-gistfile1-js-L19">19</span>
+                  <span class="line-number" id="file-gistfile1-js-L20" rel="file-gistfile1-js-L20">20</span>
+                  <span class="line-number" id="file-gistfile1-js-L21" rel="file-gistfile1-js-L21">21</span>
+                  <span class="line-number" id="file-gistfile1-js-L22" rel="file-gistfile1-js-L22">22</span>
+                  <span class="line-number" id="file-gistfile1-js-L23" rel="file-gistfile1-js-L23">23</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-js-LC1"><span class="pl-k">try</span> {</div><div class="line" id="file-gistfile1-js-LC2">	(<span class="pl-st">function</span> () {</div><div class="line" id="file-gistfile1-js-LC3">		<span class="pl-s">var</span> n;</div><div class="line" id="file-gistfile1-js-LC4">		<span class="pl-s">var</span> theRules;</div><div class="line" id="file-gistfile1-js-LC5">&nbsp;</div><div class="line" id="file-gistfile1-js-LC6">		<span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].addRule) {</div><div class="line" id="file-gistfile1-js-LC7">			<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].addRule(<span class="pl-s1"><span class="pl-pds">&quot;</span>.jsHidden<span class="pl-pds">&quot;</span></span>, <span class="pl-s1"><span class="pl-pds">&quot;</span>display: none;<span class="pl-pds">&quot;</span></span>, <span class="pl-c1">0</span>);</div><div class="line" id="file-gistfile1-js-LC8">		} <span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].insertRule) {</div><div class="line" id="file-gistfile1-js-LC9">			<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].insertRule(<span class="pl-s1"><span class="pl-pds">&quot;</span>.jsHidden { display: none; }<span class="pl-pds">&quot;</span></span>, <span class="pl-c1">0</span>);</div><div class="line" id="file-gistfile1-js-LC10">		}</div><div class="line" id="file-gistfile1-js-LC11">&nbsp;</div><div class="line" id="file-gistfile1-js-LC12">		<span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].cssRules) { theRules <span class="pl-k">=</span> <span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].cssRules; }</div><div class="line" id="file-gistfile1-js-LC13">		<span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].<span class="pl-sc">rules</span>) { theRules <span class="pl-k">=</span> <span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].<span class="pl-sc">rules</span>; }</div><div class="line" id="file-gistfile1-js-LC14">				</div><div class="line" id="file-gistfile1-js-LC15">		<span class="pl-k">if</span> (theRules) {</div><div class="line" id="file-gistfile1-js-LC16">			<span class="pl-k">for</span> (n <span class="pl-k">in</span> theRules) {</div><div class="line" id="file-gistfile1-js-LC17">				<span class="pl-k">if</span> (theRules[n].selectorText <span class="pl-k">===</span> <span class="pl-s1"><span class="pl-pds">&quot;</span>.jsOnly<span class="pl-pds">&quot;</span></span>) {</div><div class="line" id="file-gistfile1-js-LC18">					theRules[n].<span class="pl-sc">style</span>.<span class="pl-sc">display</span> <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">&#39;</span><span class="pl-pds">&#39;</span></span>;</div><div class="line" id="file-gistfile1-js-LC19">				}</div><div class="line" id="file-gistfile1-js-LC20">			} </div><div class="line" id="file-gistfile1-js-LC21">		}</div><div class="line" id="file-gistfile1-js-LC22">	} ());</div><div class="line" id="file-gistfile1-js-LC23">} <span class="pl-k">catch</span> (ex) { }</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars3.githubusercontent.com/u/587179?s=140" width="140" height="140">
+      <a href="/danlarsen">danlarsen</a>
+    / <a href="/danlarsen/952543"><strong class="css-truncate-target">gist:952543</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2011-05-02T23:07:19Z" is="relative-time">May 02, 2011</time></span>
+      <span class="text">&mdash; forked from <a href="/NReinhart/876903">NReinhart/gist:876903</a></span>
+  </div>
+    <span class="description">
+    <div>Hide and show elements based on running javascript</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/danlarsen/952543" class="link-overlay">
+            <span class="link">View <strong>gist:952543</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-js-L1" rel="file-gistfile1-js-L1">1</span>
+                  <span class="line-number" id="file-gistfile1-js-L2" rel="file-gistfile1-js-L2">2</span>
+                  <span class="line-number" id="file-gistfile1-js-L3" rel="file-gistfile1-js-L3">3</span>
+                  <span class="line-number" id="file-gistfile1-js-L4" rel="file-gistfile1-js-L4">4</span>
+                  <span class="line-number" id="file-gistfile1-js-L5" rel="file-gistfile1-js-L5">5</span>
+                  <span class="line-number" id="file-gistfile1-js-L6" rel="file-gistfile1-js-L6">6</span>
+                  <span class="line-number" id="file-gistfile1-js-L7" rel="file-gistfile1-js-L7">7</span>
+                  <span class="line-number" id="file-gistfile1-js-L8" rel="file-gistfile1-js-L8">8</span>
+                  <span class="line-number" id="file-gistfile1-js-L9" rel="file-gistfile1-js-L9">9</span>
+                  <span class="line-number" id="file-gistfile1-js-L10" rel="file-gistfile1-js-L10">10</span>
+                  <span class="line-number" id="file-gistfile1-js-L11" rel="file-gistfile1-js-L11">11</span>
+                  <span class="line-number" id="file-gistfile1-js-L12" rel="file-gistfile1-js-L12">12</span>
+                  <span class="line-number" id="file-gistfile1-js-L13" rel="file-gistfile1-js-L13">13</span>
+                  <span class="line-number" id="file-gistfile1-js-L14" rel="file-gistfile1-js-L14">14</span>
+                  <span class="line-number" id="file-gistfile1-js-L15" rel="file-gistfile1-js-L15">15</span>
+                  <span class="line-number" id="file-gistfile1-js-L16" rel="file-gistfile1-js-L16">16</span>
+                  <span class="line-number" id="file-gistfile1-js-L17" rel="file-gistfile1-js-L17">17</span>
+                  <span class="line-number" id="file-gistfile1-js-L18" rel="file-gistfile1-js-L18">18</span>
+                  <span class="line-number" id="file-gistfile1-js-L19" rel="file-gistfile1-js-L19">19</span>
+                  <span class="line-number" id="file-gistfile1-js-L20" rel="file-gistfile1-js-L20">20</span>
+                  <span class="line-number" id="file-gistfile1-js-L21" rel="file-gistfile1-js-L21">21</span>
+                  <span class="line-number" id="file-gistfile1-js-L22" rel="file-gistfile1-js-L22">22</span>
+                  <span class="line-number" id="file-gistfile1-js-L23" rel="file-gistfile1-js-L23">23</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-js-LC1"><span class="pl-k">try</span> {</div><div class="line" id="file-gistfile1-js-LC2">	(<span class="pl-st">function</span> () {</div><div class="line" id="file-gistfile1-js-LC3">		<span class="pl-s">var</span> n;</div><div class="line" id="file-gistfile1-js-LC4">		<span class="pl-s">var</span> theRules;</div><div class="line" id="file-gistfile1-js-LC5">&nbsp;</div><div class="line" id="file-gistfile1-js-LC6">		<span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].addRule) {</div><div class="line" id="file-gistfile1-js-LC7">			<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].addRule(<span class="pl-s1"><span class="pl-pds">&quot;</span>.jsHidden<span class="pl-pds">&quot;</span></span>, <span class="pl-s1"><span class="pl-pds">&quot;</span>display: none;<span class="pl-pds">&quot;</span></span>, <span class="pl-c1">0</span>);</div><div class="line" id="file-gistfile1-js-LC8">		} <span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].insertRule) {</div><div class="line" id="file-gistfile1-js-LC9">			<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].insertRule(<span class="pl-s1"><span class="pl-pds">&quot;</span>.jsHidden { display: none; }<span class="pl-pds">&quot;</span></span>, <span class="pl-c1">0</span>);</div><div class="line" id="file-gistfile1-js-LC10">		}</div><div class="line" id="file-gistfile1-js-LC11">&nbsp;</div><div class="line" id="file-gistfile1-js-LC12">		<span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].cssRules) { theRules <span class="pl-k">=</span> <span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].cssRules; }</div><div class="line" id="file-gistfile1-js-LC13">		<span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].<span class="pl-sc">rules</span>) { theRules <span class="pl-k">=</span> <span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>[<span class="pl-c1">0</span>].<span class="pl-sc">rules</span>; }</div><div class="line" id="file-gistfile1-js-LC14">				</div><div class="line" id="file-gistfile1-js-LC15">		<span class="pl-k">if</span> (theRules) {</div><div class="line" id="file-gistfile1-js-LC16">			<span class="pl-k">for</span> (n <span class="pl-k">in</span> theRules) {</div><div class="line" id="file-gistfile1-js-LC17">				<span class="pl-k">if</span> (theRules[n].selectorText <span class="pl-k">===</span> <span class="pl-s1"><span class="pl-pds">&quot;</span>.jsOnly<span class="pl-pds">&quot;</span></span>) {</div><div class="line" id="file-gistfile1-js-LC18">					theRules[n].<span class="pl-sc">style</span>.<span class="pl-sc">display</span> <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">&#39;</span><span class="pl-pds">&#39;</span></span>;</div><div class="line" id="file-gistfile1-js-LC19">				}</div><div class="line" id="file-gistfile1-js-LC20">			} </div><div class="line" id="file-gistfile1-js-LC21">		}</div><div class="line" id="file-gistfile1-js-LC22">	} ());</div><div class="line" id="file-gistfile1-js-LC23">} <span class="pl-k">catch</span> (ex) { }</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars2.githubusercontent.com/u/73310?s=140" width="140" height="140">
+      <a href="/neopunisher">neopunisher</a>
+    / <a href="/neopunisher/6598845"><strong class="css-truncate-target">gist:6598845</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2013-09-17T18:44:03Z" is="relative-time">September 17, 2013</time></span>
+  </div>
+    <span class="description">
+    <div></div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/neopunisher/6598845" class="link-overlay">
+            <span class="link">View <strong>gist:6598845</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-txt-L1" rel="file-gistfile1-txt-L1">1</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-txt-LC1">var cleancss = &#39;&#39;;_.each(document.styleSheets[0].cssRules,function(val){ cleancss += &#39;\n&#39;+ val.cssText })</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gist gist-item">
+  <div class="byline ">
+  <span class="creator">
+    <img src="https://avatars1.githubusercontent.com/u/998922?s=140" width="140" height="140">
+      <a href="/dbushell">dbushell</a>
+    / <a href="/dbushell/beb25b8352ed896d85d4"><strong class="css-truncate-target">gist:beb25b8352ed896d85d4</strong></a>
+  </span>
+  <div class="metadata">
+      <span class="datetime">Created <time datetime="2015-03-23T11:38:34Z" is="relative-time">March 23, 2015</time></span>
+  </div>
+    <span class="description">
+    <div>Poll Stylesheets until they exist in document.styleSheets</div>
+  </span>
+</div>
+ 
+ 
+  <div class="hit">
+    <div class="bubble">
+      <div class="file-box">
+          <a href="/dbushell/beb25b8352ed896d85d4" class="link-overlay">
+            <span class="link">View <strong>gist:beb25b8352ed896d85d4</strong> <span class="octicon octicon-arrow-right"></span></span>
+          </a>
+        <div class="file-data">
+          <div class="file-data">
+            <table cellpadding="0" cellspacing="0" class="lines highlight">
+              <tr>
+                <td class="line-numbers">
+                  <span class="line-number" id="file-gistfile1-js-L1" rel="file-gistfile1-js-L1">1</span>
+                  <span class="line-number" id="file-gistfile1-js-L2" rel="file-gistfile1-js-L2">2</span>
+                  <span class="line-number" id="file-gistfile1-js-L3" rel="file-gistfile1-js-L3">3</span>
+                  <span class="line-number" id="file-gistfile1-js-L4" rel="file-gistfile1-js-L4">4</span>
+                  <span class="line-number" id="file-gistfile1-js-L5" rel="file-gistfile1-js-L5">5</span>
+                  <span class="line-number" id="file-gistfile1-js-L6" rel="file-gistfile1-js-L6">6</span>
+                  <span class="line-number" id="file-gistfile1-js-L7" rel="file-gistfile1-js-L7">7</span>
+                  <span class="line-number" id="file-gistfile1-js-L8" rel="file-gistfile1-js-L8">8</span>
+                  <span class="line-number" id="file-gistfile1-js-L9" rel="file-gistfile1-js-L9">9</span>
+                  <span class="line-number" id="file-gistfile1-js-L10" rel="file-gistfile1-js-L10">10</span>
+                  <span class="line-number" id="file-gistfile1-js-L11" rel="file-gistfile1-js-L11">11</span>
+                  <span class="line-number" id="file-gistfile1-js-L12" rel="file-gistfile1-js-L12">12</span>
+                  <span class="line-number" id="file-gistfile1-js-L13" rel="file-gistfile1-js-L13">13</span>
+                  <span class="line-number" id="file-gistfile1-js-L14" rel="file-gistfile1-js-L14">14</span>
+                  <span class="line-number" id="file-gistfile1-js-L15" rel="file-gistfile1-js-L15">15</span>
+                  <span class="line-number" id="file-gistfile1-js-L16" rel="file-gistfile1-js-L16">16</span>
+                  <span class="line-number" id="file-gistfile1-js-L17" rel="file-gistfile1-js-L17">17</span>
+                  <span class="line-number" id="file-gistfile1-js-L18" rel="file-gistfile1-js-L18">18</span>
+                  <span class="line-number" id="file-gistfile1-js-L19" rel="file-gistfile1-js-L19">19</span>
+                  <span class="line-number" id="file-gistfile1-js-L20" rel="file-gistfile1-js-L20">20</span>
+                  <span class="line-number" id="file-gistfile1-js-L21" rel="file-gistfile1-js-L21">21</span>
+                  <span class="line-number" id="file-gistfile1-js-L22" rel="file-gistfile1-js-L22">22</span>
+                  <span class="line-number" id="file-gistfile1-js-L23" rel="file-gistfile1-js-L23">23</span>
+                  <span class="line-number" id="file-gistfile1-js-L24" rel="file-gistfile1-js-L24">24</span>
+                  <span class="line-number" id="file-gistfile1-js-L25" rel="file-gistfile1-js-L25">25</span>
+                </td>
+                <td class="line-data">
+                  <pre class="line-pre"><div class="line" id="file-gistfile1-js-LC1"><span class="pl-s">var</span> stylesheets <span class="pl-k">=</span> <span class="pl-s3">Array</span>.<span class="pl-sc">prototype</span>.slice.<span class="pl-s3">call</span>(<span class="pl-s3">document</span>.querySelectorAll(<span class="pl-s1"><span class="pl-pds">&#39;</span>link[href*=&quot;.css&quot;]<span class="pl-pds">&#39;</span></span>))</div><div class="line" id="file-gistfile1-js-LC2">&nbsp;</div><div class="line" id="file-gistfile1-js-LC3"><span class="pl-s">var</span> sheets <span class="pl-k">=</span> <span class="pl-s3">document</span>.<span class="pl-sc">styleSheets</span>;</div><div class="line" id="file-gistfile1-js-LC4">&nbsp;</div><div class="line" id="file-gistfile1-js-LC5"><span class="pl-st">function</span> <span class="pl-en">pollSheets</span>() {</div><div class="line" id="file-gistfile1-js-LC6">    <span class="pl-s">var</span> i, j, load_count <span class="pl-k">=</span> <span class="pl-c1">0</span>;</div><div class="line" id="file-gistfile1-js-LC7">    <span class="pl-k">for</span> (i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> stylesheets.<span class="pl-sc">length</span>; i<span class="pl-k">++</span>) {</div><div class="line" id="file-gistfile1-js-LC8">        <span class="pl-k">for</span> (j <span class="pl-k">=</span> <span class="pl-c1">0</span>; j <span class="pl-k">&lt;</span> sheets.<span class="pl-sc">length</span>; j<span class="pl-k">++</span>) {</div><div class="line" id="file-gistfile1-js-LC9">            <span class="pl-c">// check if stylesheet exists in document.styleSheets</span></div><div class="line" id="file-gistfile1-js-LC10">            <span class="pl-k">if</span> (sheets[j].<span class="pl-sc">href</span> <span class="pl-k">&amp;&amp;</span> sheets[j].<span class="pl-sc">href</span>.<span class="pl-s3">indexOf</span>( stylesheets[i].<span class="pl-sc">href</span> ) <span class="pl-k">&gt;</span> <span class="pl-k">-</span><span class="pl-c1">1</span>) {</div><div class="line" id="file-gistfile1-js-LC11">                <span class="pl-en">console</span><span class="pl-s3">.log</span>(<span class="pl-s1"><span class="pl-pds">&#39;</span>ready: <span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span> stylesheets[i].<span class="pl-sc">href</span>);</div><div class="line" id="file-gistfile1-js-LC12">                load_count<span class="pl-k">++</span>;</div><div class="line" id="file-gistfile1-js-LC13">            }</div><div class="line" id="file-gistfile1-js-LC14">        }</div><div class="line" id="file-gistfile1-js-LC15">    }</div><div class="line" id="file-gistfile1-js-LC16">&nbsp;</div><div class="line" id="file-gistfile1-js-LC17">    <span class="pl-k">if</span> (load_count <span class="pl-k">&gt;=</span> stylesheets.<span class="pl-sc">length</span>) {</div><div class="line" id="file-gistfile1-js-LC18">        <span class="pl-c">// done</span></div><div class="line" id="file-gistfile1-js-LC19">        <span class="pl-en">console</span><span class="pl-s3">.log</span>(<span class="pl-s1"><span class="pl-pds">&#39;</span>all ready<span class="pl-pds">&#39;</span></span>);</div><div class="line" id="file-gistfile1-js-LC20">        <span class="pl-k">return</span>;</div><div class="line" id="file-gistfile1-js-LC21">    }</div><div class="line" id="file-gistfile1-js-LC22">    <span class="pl-c">// poll again</span></div><div class="line" id="file-gistfile1-js-LC23">    <span class="pl-s3">setTimeout</span>(pollSheets);</div><div class="line" id="file-gistfile1-js-LC24">}</div><div class="line" id="file-gistfile1-js-LC25">pollSheets();</div></pre>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+        <div class="pagination">
+  <span class="disabled">&#x2190;</span>
+ 
+  <a href="/search?page=2&amp;q=style+sheets.css">&#x2192;</a>
+</div>
+ 
+    </div>
+  </div>
+</div>
+ 
+  <div class="context-overlay"></div>
+</div>
+ 
+    </div>
+    <div class="slow-loading-overlay"></div>
+  </div>
+ 
+  <div id="ajax-error-message" class="flash flash-error">
+    <div class="container">
+      <span class="octicon octicon-alert"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="octicon octicon-x ajax-error-dismiss"></a>
+    </div>
+  </div>
+ 
+ 
+  <footer>
+    <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="https://github.com/blog">Blog</a></li>
+      <li><a href="https://github.com/about">About</a></li>
+ 
+    </ul>
+ 
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub "></span>
+    </a>
+ 
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.08595s from github-fe102-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+        <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+ 
+  </footer>
+ 
+  <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
+ gistfile1.txt Raw
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+document.write("");
+document.write("<div id=\"globalfooter\" class=\"gf-980\">");
+document.write("	<div id=\"breadcrumbs\">");
+document.write("		<a href=\"http:\/\/www.apple.com\/\" class=\"home\">Home<\/a>");
+document.write("		<span>&gt;<\/span>");
+document.write("		<a href=\"http:\/\/www.apple.com\/support\/\">Support<\/a>");
+document.write("	<\/div><!--\/breadcrumbs-->");
+document.write("");
+document.write("	<p class=\"gf-buy\">");
+document.write("		Shop the <a href=\"http:\/\/store.apple.com\/us\/\">Apple Online Store<\/a> (1-800-MY-APPLE), visit 
+ 
+an <a href=\"http:\/\/www.apple.com\/retail\/\">Apple Retail Store<\/a>, or find a <a href=\"http:\/\/www.apple.com\/buy\/locator\/
+ 
+\">reseller<\/a>.");
+document.write("		<\/p>");
+document.write("	");
+document.write("	");
+document.write("	<ul class=\"gf-links piped\">");
+document.write("	");
+document.write("		<li><a href=\"http:\/\/www.apple.com\/about\/\" class=\"first\">Apple Info<\/a><\/li>");
+document.write("		<li><a href=\"http:\/\/www.apple.com\/sitemap\/\">Site Map<\/a><\/li>");
+document.write("		<li><a href=\"http:\/\/www.apple.com\/hotnews\/\">Hot News<\/a><\/li>");
+document.write("		<li><a href=\"http:\/\/www.apple.com\/rss\/\">RSS Feeds<\/a><\/li>");
+document.write("		<li><a href=\"http:\/\/www.apple.com\/contact\/\">Contact Us<\/a><\/li>");
+document.write("		");
+document.write("	<\/ul>");
+document.write("	");
+document.write("	<div class=\"gf-sosumi\">");
+document.write("		<p>Copyright &copy;  " + year + " Apple Inc. All rights reserved.<\/p>");
+document.write("		<ul class=\"piped\">");
+document.write("			<li><a href=\"http:\/\/www.apple.com\/legal\/terms\/site.html\" class=\"first\">Terms of 
+ 
+Use<\/a><\/li>");
+document.write("			<li><a href=\"http:\/\/www.apple.com\/privacy\/\">Privacy Policy<\/a><\/li>");
+document.write("                        <li><a href=\"http:\/\/www.apple.com\/privacy\/use-of-cookies\/\">Use of Cookies<\/a><
+ 
+\/li>");
+document.write("		<\/ul>");
+document.write("	<\/div>");
+document.write("<\/div><!--\/globalfooter-->");
+
+Write Preview Parsed as Markdown  Edit in fullscreen
+
+Comment
+
+Status API Blog About © 2015 GitHub, Inc. Terms Privacy Security Contact
